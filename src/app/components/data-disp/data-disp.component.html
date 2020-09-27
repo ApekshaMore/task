@@ -1,0 +1,50 @@
+<!-- 
+<table class="table" style="width: 100%; border-inline: initial;"> 
+    <thead style="background-color: rgba(58, 58, 223, 0.541);"> 
+    <tr > 
+        <th scope="col">Id</th> 
+        <th scope="col">User Name</th>
+        <th scope="col">Post Name</th> 
+        <th scope="col">Post Description</th> 
+    </tr> 
+    </thead> 
+    <tbody style="align-content: center;"> 
+    <tr *ngFor="let a of details;" style="text-align: center; font-size: small; text-align: justify;"> 
+        <td scope="col">{{ a.id }}</td> 
+        <td scope="col">{{ names[a.userId -1]  }}</td> 
+        <td scope="col">{{ a.title }}</td> 
+        <td scope="col">{{ a.body }}</td> 
+    </tr> 
+    </tbody>  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <table class="table" style="width: 100%; border-inline: initial;"> 
+    <tr class="col-lg-4" style="text-align: center; font-size: small; text-align: justify;">
+    <div class="box">
+        <div class="container">
+             <div class="row">
+                 <td  *ngFor="let a of details;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="border: thick; ">
+                        <div class="box-part text-center" style="background-color:lightcoral">
+                           <div class="title">
+                            <h4 style="background-color: aqua;">Title</h4>
+                                <span>{{ a.title }}</span>
+                                <!-- <td scope="col"></td> 
+                                <td scope="col">{{ names[a.userId -1]  }}</td> 
+                                <td scope="col">{{ a.title }}</td> 
+                                <td scope="col">{{ a.body }}</td>  -->
+                            </div>
+                            <div class="text">
+                                <h4 style="background-color: aqua;">Description</h4>
+                                <span >{{ a.body }}</span>
+                            </div>
+                         </div>
+                    </div>	
+                   </td>  
+            </div>		
+        </div>
+    </div>
+</tr>
+</table>
+
+
